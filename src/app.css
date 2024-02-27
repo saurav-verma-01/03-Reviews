@@ -1,0 +1,141 @@
+main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 37.5rem;
+  padding: 1.5rem;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 4.6875rem;
+  background: url(<path-to-image>), lightgray 0px -37.5px / 100% 150% no-repeat;
+  margin-inline: auto;
+  position: relative;
+  z-index: 5;
+}
+
+.profile-img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #645cff;
+  position: absolute;
+  top: -0.25rem;
+  right: -0.5rem;
+
+  z-index: -2;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.quote {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  background: #645cff;
+  position: absolute;
+  top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quotes-icon {
+  color: white;
+}
+.profile-details {
+  text-align: center;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1.5rem;
+
+  color: #0f172a;
+  text-align: center;
+  /* font-family: Roboto; */
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.563rem; /* 100.032% */
+  letter-spacing: 0.0625rem;
+  text-transform: capitalize;
+  margin-bottom: 0.25rem;
+}
+
+.profile-job {
+  color: #645cff;
+  text-align: center;
+  /* font-family: Roboto; */
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.8125rem; /* 100% */
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.profile-info {
+  color: #475569;
+  text-align: center;
+  /* font-family: Roboto; */
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5;
+  gap: 1rem;
+}
+
+.controls button {
+  border: none;
+  background-color: transparent;
+}
+
+.f-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  /* background-color: #3c3799; */
+  color: #3c3799;
+  transition: all 0.6s ease;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.f-icon:hover {
+  background-color: #3c3799;
+  color: #fff;
+}
+
+.card .btn {
+  display: block;
+  margin-top: 0.75rem;
+  margin-inline: auto;
+}
